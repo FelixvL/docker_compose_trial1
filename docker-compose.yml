@@ -6,3 +6,9 @@ services:
       context: ./lekkerreact
     ports:
       - "3050:3000"
+  achterkant:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./deachterkant
+    ports:
+      - "5050:5050"
