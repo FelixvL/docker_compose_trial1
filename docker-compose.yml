@@ -1,0 +1,8 @@
+version: '3'
+services:
+  client:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./lekkerreact
+    ports:
+      - "3050:3000"
